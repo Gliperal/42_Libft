@@ -6,7 +6,7 @@
 /*   By: nwhitlow <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/01 11:45:30 by nwhitlow          #+#    #+#             */
-/*   Updated: 2019/05/10 16:23:54 by nwhitlow         ###   ########.fr       */
+/*   Updated: 2019/05/10 18:24:38 by nwhitlow         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -91,5 +91,6 @@ int					ft_max(int a, int b);
 char				*ft_strndup(const char *s1, int len);
 void				ft_swapbytes(char *a, char *b);
 void				ft_strrev(char *str);
+char				*ft_strsum(const char *s1, const char *s2);
 
 #endif
