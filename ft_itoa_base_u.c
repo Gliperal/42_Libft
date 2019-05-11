@@ -6,7 +6,7 @@
 /*   By: nwhitlow <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/10 18:48:44 by nwhitlow          #+#    #+#             */
-/*   Updated: 2019/05/10 19:09:24 by nwhitlow         ###   ########.fr       */
+/*   Updated: 2019/05/10 19:25:27 by nwhitlow         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ static int	digits_base(unsigned long long n, int base)
 	int digits;
 
 	if (n == 0)
-		return (0);
+		return (1);
 	digits = 0;
 	while (n > 0)
 	{
