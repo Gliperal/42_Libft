@@ -6,7 +6,7 @@
 /*   By: nwhitlow <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/01 11:45:30 by nwhitlow          #+#    #+#             */
-/*   Updated: 2019/05/10 19:06:40 by nwhitlow         ###   ########.fr       */
+/*   Updated: 2019/05/12 11:58:23 by nwhitlow         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -95,5 +95,6 @@ void				ft_strrev(char *str);
 char				*ft_strsum(const char *s1, const char *s2);
 char				*ft_itoa_base_u(unsigned long long n, const char *base);
 char				*ft_itoa_base(long long n, const char *base);
+long long			ft_abs(long long n);
 
 #endif
