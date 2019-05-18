@@ -6,13 +6,13 @@
 /*   By: nwhitlow <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/18 12:40:32 by nwhitlow          #+#    #+#             */
-/*   Updated: 2019/05/18 12:41:32 by nwhitlow         ###   ########.fr       */
+/*   Updated: 2019/05/18 12:54:17 by nwhitlow         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 void	ft_make_lowercase(char *str)
 {
-	while (str)
+	while (*str)
 	{
 		if (*str >= 'A' && *str <= 'Z')
 			*str += 'a' - 'A';
