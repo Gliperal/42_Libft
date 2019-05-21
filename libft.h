@@ -6,7 +6,7 @@
 /*   By: nwhitlow <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/01 11:45:30 by nwhitlow          #+#    #+#             */
-/*   Updated: 2019/05/21 12:07:44 by nwhitlow         ###   ########.fr       */
+/*   Updated: 2019/05/21 12:44:23 by nwhitlow         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -98,6 +98,7 @@ char				*ft_itoa_base(long long n, const char *base);
 long long			ft_abs(long long n);
 void				ft_make_lowercase(char *str);
 void				ft_make_uppercase(char *str);
+int					ft_pop_atoi(char *str);
 
 #include "get_next_line.h"
 
