@@ -6,7 +6,7 @@
 /*   By: nwhitlow <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/01 11:45:30 by nwhitlow          #+#    #+#             */
-/*   Updated: 2019/05/23 20:18:21 by nwhitlow         ###   ########.fr       */
+/*   Updated: 2019/05/29 13:55:04 by nwhitlow         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -101,5 +101,6 @@ long long			ft_abs(long long n);
 void				ft_make_lowercase(char *str);
 void				ft_make_uppercase(char *str);
 int					ft_pop_atoi(char *str);
+void				*ft_memdup(void *src, size_t size);
 
 #endif
