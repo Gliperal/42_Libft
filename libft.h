@@ -6,17 +6,16 @@
 /*   By: nwhitlow <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/01 11:45:30 by nwhitlow          #+#    #+#             */
-/*   Updated: 2019/05/29 13:55:04 by nwhitlow         ###   ########.fr       */
+/*   Updated: 2019/05/30 21:15:37 by nwhitlow         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
-# include <string.h>
 # include <stdlib.h>
-
-# include "get_next_line.h"
+# include <string.h>
+# include <unistd.h>
 
 # define HMODULUS 101
 
@@ -102,5 +101,10 @@ void				ft_make_lowercase(char *str);
 void				ft_make_uppercase(char *str);
 int					ft_pop_atoi(char *str);
 void				*ft_memdup(void *src, size_t size);
+
+int					get_next_line(const int fd, char **line);
+
+int					ft_printf(const char *format, ...);
+char				*ft_strprintf(const char *format, ...);
 
 #endif

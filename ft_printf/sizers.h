@@ -1,35 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_line.h                                    :+:      :+:    :+:   */
+/*   sizers.h                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nwhitlow <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/05/02 15:01:08 by nwhitlow          #+#    #+#             */
-/*   Updated: 2019/05/30 19:20:06 by nwhitlow         ###   ########.fr       */
+/*   Created: 2019/05/09 11:33:05 by nwhitlow          #+#    #+#             */
+/*   Updated: 2019/05/12 14:55:25 by nwhitlow         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef GET_NEXT_LINE_H
-# define GET_NEXT_LINE_H
+#ifndef SIZERS_H
+# define SIZERS_H
 
-# include <stdlib.h>
-# include <unistd.h>
+# include "argsize.h"
 
-# include "libft.h"
-
-# define BUFF_SIZE 1024
-
-/*
-** WARNING! Avoid buffer size of larger than 65536
-*/
-
-int				get_next_line(const int fd, char **line);
-
-typedef struct	s_fragment
-{
-	char		*data;
-	int			size;
-}				t_fragment;
+ARGSIZE	size_char(char modifier);
+ARGSIZE	size_int(char modifier);
+ARGSIZE	size_double(char modifier);
+ARGSIZE	size_ptr(char modifier);
 
 #endif

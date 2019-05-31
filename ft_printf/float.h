@@ -1,35 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_line.h                                    :+:      :+:    :+:   */
+/*   float.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nwhitlow <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/05/02 15:01:08 by nwhitlow          #+#    #+#             */
-/*   Updated: 2019/05/30 19:20:06 by nwhitlow         ###   ########.fr       */
+/*   Created: 2019/05/13 14:53:54 by nwhitlow          #+#    #+#             */
+/*   Updated: 2019/05/18 18:08:35 by nwhitlow         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef GET_NEXT_LINE_H
-# define GET_NEXT_LINE_H
+#ifndef FLOAT_H
+# define FLOAT_H
 
-# include <stdlib.h>
-# include <unistd.h>
-
-# include "libft.h"
-
-# define BUFF_SIZE 1024
-
-/*
-** WARNING! Avoid buffer size of larger than 65536
-*/
-
-int				get_next_line(const int fd, char **line);
-
-typedef struct	s_fragment
+typedef struct		s_float
 {
-	char		*data;
-	int			size;
-}				t_fragment;
+	char			type;
+	char			sign;
+	int				exponent;
+	unsigned long	significand;
+}					t_float;
+
+t_float				*parse_double(double d);
+t_float				*parse_longdouble(long double d);
+void				del_float(t_float **f);
 
 #endif

@@ -1,35 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_line.h                                    :+:      :+:    :+:   */
+/*   format_str.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nwhitlow <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/05/02 15:01:08 by nwhitlow          #+#    #+#             */
-/*   Updated: 2019/05/30 19:20:06 by nwhitlow         ###   ########.fr       */
+/*   Created: 2019/05/10 14:28:43 by nwhitlow          #+#    #+#             */
+/*   Updated: 2019/05/20 15:42:43 by nwhitlow         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef GET_NEXT_LINE_H
-# define GET_NEXT_LINE_H
+#include "libftprintf.h"
 
-# include <stdlib.h>
-# include <unistd.h>
-
-# include "libft.h"
-
-# define BUFF_SIZE 1024
-
-/*
-** WARNING! Avoid buffer size of larger than 65536
-*/
-
-int				get_next_line(const int fd, char **line);
-
-typedef struct	s_fragment
+char	*format_str(t_printable *p)
 {
-	char		*data;
-	int			size;
-}				t_fragment;
+	char *str;
+	char *tmp;
 
-#endif
+	if (p->type == '\1')
+		str = p->data;
+	else
+		str = *((char **)p->data);
+	if (!str)
+		return (ft_strdup("(null)"));
+	if (p->precision == -1)
+		str = ft_strdup(str);
+	else
+		str = ft_strndup(str, p->precision);
+	if (!str)
+		return (NULL);
+	tmp = pad_printable(p, "", str);
+	free(str);
+	return (tmp);
+}

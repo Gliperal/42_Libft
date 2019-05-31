@@ -1,35 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_line.h                                    :+:      :+:    :+:   */
+/*   readers.h                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nwhitlow <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/05/02 15:01:08 by nwhitlow          #+#    #+#             */
-/*   Updated: 2019/05/30 19:20:06 by nwhitlow         ###   ########.fr       */
+/*   Created: 2019/05/08 20:49:19 by nwhitlow          #+#    #+#             */
+/*   Updated: 2019/05/12 16:08:03 by nwhitlow         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef GET_NEXT_LINE_H
-# define GET_NEXT_LINE_H
+#ifndef READERS_H
+# define READERS_H
 
-# include <stdlib.h>
-# include <unistd.h>
-
-# include "libft.h"
-
-# define BUFF_SIZE 1024
-
-/*
-** WARNING! Avoid buffer size of larger than 65536
-*/
-
-int				get_next_line(const int fd, char **line);
-
-typedef struct	s_fragment
-{
-	char		*data;
-	int			size;
-}				t_fragment;
+void	*read_char(va_list ap);
+void	*read_short(va_list ap);
+void	*read_int(va_list ap);
+void	*read_long(va_list ap);
+void	*read_longlong(va_list ap);
+void	*read_double(va_list ap);
+void	*read_longdouble(va_list ap);
+void	*read_ptr(va_list ap);
 
 #endif
