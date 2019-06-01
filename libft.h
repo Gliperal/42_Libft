@@ -6,7 +6,7 @@
 /*   By: nwhitlow <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/01 11:45:30 by nwhitlow          #+#    #+#             */
-/*   Updated: 2019/06/01 12:20:52 by nwhitlow         ###   ########.fr       */
+/*   Updated: 2019/06/01 12:31:20 by nwhitlow         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -101,7 +101,7 @@ void				ft_make_lowercase(char *str);
 void				ft_make_uppercase(char *str);
 int					ft_pop_atoi(char *str);
 void				*ft_memdup(void *src, size_t size);
-void				*ft_write_number_to_memory(void *d, void *s, int l, int e);
+void				*ft_number_cpy(void *dst, void *src, int size, int endian);
 void				ft_memrev(void *mem, size_t len);
 
 int					get_next_line(const int fd, char **line);

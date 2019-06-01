@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_write_number_to_memory.c                        :+:      :+:    :+:   */
+/*   ft_number_cpy.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nwhitlow <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/01 12:15:50 by nwhitlow          #+#    #+#             */
-/*   Updated: 2019/06/01 12:20:31 by nwhitlow         ###   ########.fr       */
+/*   Updated: 2019/06/01 12:30:45 by nwhitlow         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_write_number_to_memory(void *dst, void *src, int size, int endian)
+void	*ft_number_cpy(void *dst, void *src, int size, int endian)
 {
 	unsigned char *mem;
 
