@@ -18,7 +18,8 @@ OBJS_BONUS=ft_lstnew.o ft_lstdelone.o ft_lstdel.o ft_lstadd.o ft_lstiter.o \
 OBJS_PERSONAL=ft_abs.o ft_itoa_base.o ft_itoa_base_u.o ft_lstappend.o \
 			  ft_make_lowercase.o ft_make_uppercase.o ft_max.o ft_memdup.o \
 			  ft_min.o ft_pop_atoi.o ft_strlcpy.o ft_strndup.o ft_strrev.o \
-			  ft_strsum.o ft_swapbytes.o
+			  ft_strsum.o ft_swapbytes.o ft_write_number_to_memory.o \
+			  ft_memrev.o
 OBJS=$(OBJS_LIBC) $(OBJS_EXTRA) $(OBJS_BONUS) $(OBJS_PERSONAL)
 PROJ_GNL=get_next_line.o
 PROJ_PRINTF_SRC=$(wildcard ft_printf/*.c)
