@@ -20,7 +20,10 @@ OBJS_PERSONAL=ft_abs.o ft_itoa_base.o ft_itoa_base_u.o ft_lstappend.o \
 			  ft_min.o ft_pop_atoi.o ft_strlcpy.o ft_strndup.o ft_strrev.o \
 			  ft_strsum.o ft_swapbytes.o ft_number_cpy.o \
 			  ft_memrev.o ft_convert_endian.o ft_left_rotate.o \
-			  ft_right_rotate.o ft_putstr_upper.o ft_putstr_lower.o
+			  ft_right_rotate.o ft_putstr_upper.o ft_putstr_lower.o \
+			  ft_arrlst_new.o ft_arrlst_add.o ft_arrlst_clear.o \
+			  ft_arrlst_indexof.o ft_arrlst_remove.o ft_arrlst_iter.o \
+			  ft_arrlst_del.o
 OBJS=$(OBJS_LIBC) $(OBJS_EXTRA) $(OBJS_BONUS) $(OBJS_PERSONAL)
 PROJ_GNL=get_next_line.o
 PROJ_PRINTF_SRC=$(wildcard ft_printf/*.c)

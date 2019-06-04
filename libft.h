@@ -6,7 +6,7 @@
 /*   By: nwhitlow <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/01 11:45:30 by nwhitlow          #+#    #+#             */
-/*   Updated: 2019/06/01 15:09:08 by nwhitlow         ###   ########.fr       */
+/*   Updated: 2019/06/03 20:17:11 by nwhitlow         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -108,6 +108,22 @@ unsigned int		ft_left_rotate(unsigned int n, int dist);
 unsigned int		ft_right_rotate(unsigned int n, int dist);
 void				ft_putstr_upper(char const *s);
 void				ft_putstr_lower(char const *s);
+
+typedef struct		s_arrlst
+{
+	void			*data;
+	size_t			elem_size;
+	int				alloc_size;
+	int				size;
+}					t_arrlst;
+
+t_arrlst			*ft_arrlst_new(int datum_size);
+void				*ft_arrlst_add(t_arrlst *arrlst, void *new);
+void				ft_arrlst_clear(t_arrlst *arrlst);
+int					ft_arrlst_indexof(t_arrlst *arrlst, void *elem);
+int					ft_arrlst_remove(t_arrlst *arrlst, void *elem);
+void				ft_arrlst_iter(t_arrlst *arrlst, void (*f)(void *elem));
+void				ft_arrlst_del(t_arrlst **arrlst);
 
 int					get_next_line(const int fd, char **line);
 
