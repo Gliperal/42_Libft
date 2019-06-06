@@ -6,7 +6,7 @@
 /*   By: nwhitlow <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/06 12:03:54 by nwhitlow          #+#    #+#             */
-/*   Updated: 2019/06/06 12:05:18 by nwhitlow         ###   ########.fr       */
+/*   Updated: 2019/06/06 12:22:02 by nwhitlow         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ void	*ft_arrlst_add_arr(t_arrlst *arrlst, void *src, int amount)
 		return (NULL);
 	if (arrlst->size + amount > arrlst->alloc_size)
 	{
-		tmp = lst->data;
+		tmp = arrlst->data;
 		arrlst->data = malloc((arrlst->size + amount) * arrlst->elem_size);
 		if (!arrlst->data)
 		{
