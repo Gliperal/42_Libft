@@ -6,7 +6,7 @@
 /*   By: nwhitlow <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/01 11:45:30 by nwhitlow          #+#    #+#             */
-/*   Updated: 2019/06/03 21:54:22 by nwhitlow         ###   ########.fr       */
+/*   Updated: 2019/06/06 12:11:06 by nwhitlow         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -126,6 +126,10 @@ void				ft_arrlst_iter(t_arrlst *arrlst, void (*f)(void *elem));
 void				ft_arrlst_del(t_arrlst **arrlst);
 int					ft_arrlst_isempty(t_arrlst *arrlst);
 void				*ft_arrlst_get(t_arrlst *arrlst, int index);
+void				ft_arrlst_remove_last(t_arrlst *arrlst, int amount);
+typedef t_arrlst	t_arst;
+void				*ft_arrlst_add_arrlst(t_arst *l, t_arst *s, int o, int a);
+void				*ft_arrlst_add_arr(t_arrlst *arrlst, void *src, int amount);
 
 int					get_next_line(const int fd, char **line);
 
