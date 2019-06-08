@@ -21,7 +21,7 @@ OBJS_PERSONAL=ft_abs.o ft_itoa_base.o ft_itoa_base_u.o ft_lstappend.o \
 			  ft_strsum.o ft_swapbytes.o ft_number_cpy.o \
 			  ft_memrev.o ft_convert_endian.o ft_left_rotate.o \
 			  ft_right_rotate.o ft_putstr_upper.o ft_putstr_lower.o \
-			  ft_strchri.o \
+			  ft_strchri.o ft_file_processor.o \
 			  ft_arrlst_new.o ft_arrlst_add.o ft_arrlst_clear.o \
 			  ft_arrlst_indexof.o ft_arrlst_remove.o ft_arrlst_iter.o \
 			  ft_arrlst_del.o ft_arrlst_isempty.o ft_arrlst_get.o \
