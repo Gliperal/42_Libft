@@ -6,7 +6,7 @@
 /*   By: nwhitlow <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/28 15:07:25 by nwhitlow          #+#    #+#             */
-/*   Updated: 2019/06/02 21:19:36 by nwhitlow         ###   ########.fr       */
+/*   Updated: 2019/06/08 15:28:41 by nwhitlow         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 # define FT_FILE_PROCESSOR_H
 
 # include <fcntl.h>
-# include "libft/libft.h"
+# include "libft.h"
 
 typedef int			(*t_lh)(const char *line, void *data);
 typedef void		(*t_freer)(void *data);
